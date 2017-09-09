@@ -1,0 +1,37 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;hello-go&gt;">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../myutil" />
+      <root url="file://$PROJECT_DIR$/../gopkg.in" />
+      <root url="file://$PROJECT_DIR$/../svgo_tst" />
+      <root url="file://$PROJECT_DIR$/../hell_pprof" />
+      <root url="file://$PROJECT_DIR$/../gnd.la" />
+      <root url="file://$PROJECT_DIR$/../bitbucket.org" />
+      <root url="file://$PROJECT_DIR$/../labix.org" />
+      <root url="file://$PROJECT_DIR$/../github.com" />
+      <root url="file://$PROJECT_DIR$/../golang.org" />
+      <root url="file://$PROJECT_DIR$/../.idea" />
+      <root url="file://$PROJECT_DIR$/../gopkgs.com" />
+      <root url="file://$PROJECT_DIR$/../web-test" />
+      <root url="file://$PROJECT_DIR$/../go_bootcamp" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../myutil" />
+      <root url="file://$PROJECT_DIR$/../gopkg.in" />
+      <root url="file://$PROJECT_DIR$/../svgo_tst" />
+      <root url="file://$PROJECT_DIR$/../hell_pprof" />
+      <root url="file://$PROJECT_DIR$/../gnd.la" />
+      <root url="file://$PROJECT_DIR$/../bitbucket.org" />
+      <root url="file://$PROJECT_DIR$/../labix.org" />
+      <root url="file://$PROJECT_DIR$/../github.com" />
+      <root url="file://$PROJECT_DIR$/../golang.org" />
+      <root url="file://$PROJECT_DIR$/../.idea" />
+      <root url="file://$PROJECT_DIR$/../gopkgs.com" />
+      <root url="file://$PROJECT_DIR$/../web-test" />
+      <root url="file://$PROJECT_DIR$/../go_bootcamp" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>

@@ -1,0 +1,37 @@
+<html>
+    <head>
+    <script type="text/javascript">
+        var ws = new WebSocket("ws://localhost:3000/v1/ws");
+        ws.addEventListener("message",function(e){
+           // alert("some msg received!");
+            console.log(e);
+        });
+        ws.onopen =function(e){
+            alert("hi opened!");
+            ws.send("foo");
+
+            var actType = 'crud_cmd';
+            var payloadData = {
+                name:'yiqing',
+                sex:1
+            };
+            ws.send(JSON.stringify({
+                type:actType,
+                payload:payloadData            }));
+        };
+       
+
+        var ws2 = new WebSocket("ws://localhost:3000/v3/ws");
+        ws2.addEventListener("message",function(e){
+            // alert("yayyay")
+            console.log(e);
+        });
+
+    </script>
+    </head>
+    <body>
+    
+   <h1>Hello WebSocket</h1>
+    
+    </body>
+    </html>
