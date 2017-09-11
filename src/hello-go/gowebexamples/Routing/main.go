@@ -21,19 +21,26 @@ func main() {
 		fmt.Fprintf(w, "You 've request the book:%s on page %s\n", title, page)
 	})
 
+	// ------------------------------------------------------ +|
+	r.HandleFunc("/books/{title}", CreateBook).Methods("POST")
+	r.HandleFunc("/books/{title}", ReadBook).Methods("GET")
+	r.HandleFunc("/books/{title}", UpdateBook).Methods("PUT")
+	r.HandleFunc("/books/{title}", DeleteBook).Methods("DELETE")
+	// ------------------------------------------------------- +|
+
 	// 设置http服务器的路由器
 	http.ListenAndServe(":80", r)
 }
 
 func CreateBook(w http.ResponseWriter, r *http.Request) {
-
+	w.Write([]byte("hi create"))
 }
 func ReadBook(w http.ResponseWriter, r *http.Request) {
-
+	w.Write([]byte("hi read"))
 }
 func UpdateBook(w http.ResponseWriter, r *http.Request) {
-
+	w.Write([]byte("hi update"))
 }
 func DeleteBook(w http.ResponseWriter, r *http.Request) {
-
+	w.Write([]byte("hi delete"))
 }
