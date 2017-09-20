@@ -8,6 +8,9 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
+// log中的Fatal，会调用os.Exit(1)，会导致程序退出的
+// log中的Fatal，会调用os.Exit(1)，会导致程序退出的
+// log 的Panic函数会导致挂掉（且会打印出panic时的信息）并退出->退出返回值为2
 func main() {
 	db, err := sql.Open("mysql", "root:@/yii_space")
 	if err != nil {
